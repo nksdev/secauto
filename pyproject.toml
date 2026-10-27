@@ -9,7 +9,7 @@ description = "Autonomous offensive security and reconnaissance platform"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Naman Kumar Sonker", email = "nksdev@users.noreply.github.com" }]
+authors = [{ name = "Naman Kumar Sonker", email = "namansonker007@gmail.com" }]
 keywords = ["security", "pentest", "reconnaissance", "vulnerability", "scanner", "automation"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
