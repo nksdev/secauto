@@ -1,0 +1,6 @@
+.env
+.git/config
+backup.zip
+wp-config.php
+phpinfo.php
+server-status

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secauto"
+version = "1.0.0"
+description = "Autonomous offensive security and reconnaissance platform"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Naman Kumar Sonker", email = "nksdev@users.noreply.github.com" }]
+keywords = ["security", "pentest", "reconnaissance", "vulnerability", "scanner", "automation"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+]
+dependencies = []
+
+[project.optional-dependencies]
+tls = ["sslyze>=6.1"]
+full = ["sslyze>=6.1", "requests>=2.31"]
+
+[project.scripts]
+secauto = "secauto.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/nksdev/secauto"
+Documentation = "https://github.com/nksdev/secauto/tree/main/docs"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["secauto*"]
+
+[tool.setuptools.package-data]
+secauto = ["templates/*.html", "data/*.txt"]
